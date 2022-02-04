@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
+import Imagen from '../Img/carrito.png';
 
 const navbar = () => {
     return (
@@ -26,6 +28,7 @@ const navbar = () => {
       </ul>
     </div>
   </div>
+  <CartWidget imagen={Imagen} />
 </nav>
         </div>
     )
