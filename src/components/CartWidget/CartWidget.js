@@ -1,7 +1,7 @@
 const CartWidget = (props) => {
     return (
         <>
-            <img src={props.imagen}></img>
+            <img src={props.imagen} alt="carrito"></img>
         </>
     );
 }
