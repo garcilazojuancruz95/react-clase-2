@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-const ItemCount = (props) => {
-    const [valoraciones, setValoraciones] = useState(0);
+function ItemCount({ Stock, Initial,  onAdd }) {
+    const [valoraciones, setValoraciones] = useState(1);
 
-    const increment = () => {
+    const increment = (Stock) => {
         setValoraciones(valoraciones+1)
     }
 
-    const decrement = () => {
+    const decrement = (Initial) => {
         setValoraciones(valoraciones-1)
-
     }
+    
     return (
         <div>
             <p><button onClick={decrement}> - </button> {valoraciones} <button onClick={increment}> + </button></p>

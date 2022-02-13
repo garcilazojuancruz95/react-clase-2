@@ -1,33 +1,19 @@
 import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import Imagen from '../Img/carrito.png';
+import '../NavBar/Navbar.css'
 
 const navbar = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="./">Level</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="./">Inicio</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="./">Remeras</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="./">Pantalones</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="./">Zapatillas</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
+            <nav className="menu">
+                <label className="logo">Level</label>
+                <ul className="menu_items">
+                    <li className="active"><a href="#">Inicio</a></li>
+                    <li><a href="#">Remeras</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">Zapatillas</a></li>
+                </ul>
         <CartWidget imagen={Imagen} />
         </nav>
         </div>

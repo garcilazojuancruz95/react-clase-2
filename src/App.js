@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <ItemListContainer />
-      <ItemCount />
+      <ItemCount Initial="1" Stock="5" />
     </div>
   );
 }
