@@ -1,14 +1,16 @@
 import { useState } from "react";
 
-function ItemCount({ Stock, Initial,  onAdd }) {
+function ItemCount({ stock, initial, onAdd }) {
     const [valoraciones, setValoraciones] = useState(1);
 
-    const increment = (Stock) => {
-        setValoraciones(valoraciones+1)
+    const increment = () => {
+        if(valoraciones < stock){
+            setValoraciones(valoraciones+1)}
     }
 
-    const decrement = (Initial) => {
-        setValoraciones(valoraciones-1)
+    const decrement = () => {
+        if(valoraciones > initial){
+        setValoraciones(valoraciones-1)}
     }
     
     return (
