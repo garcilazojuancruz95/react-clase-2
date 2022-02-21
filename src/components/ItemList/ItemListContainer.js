@@ -1,7 +1,28 @@
-const ItemListContainer = ({greeting}) => {
+import ItemList from './ItemList'
+
+const ItemListContainer = ({item}) => {
     return(
         <>
-            <h2>Acá se presentan los productos que voy a vender.</h2>
+        <div>
+            {
+            item.map( item =>
+                <ItemList id= {item.id}
+                title= {item.title}
+                price= {item.price}
+                pictureUrl= {item.pictureUrl} />
+                <ItemList id= {item.id}
+                title= {item.title}
+                price= {item.price}
+                pictureUrl= {item.pictureUrl} />
+                <ItemList id= {item.id}
+                title= {item.title}
+                price= {item.price}
+                pictureUrl= {item.pictureUrl} />
+            )
+            
+            }
+        </div>
+           
         </>
     );
 }
