@@ -1,17 +1,16 @@
-import Item from './Item'
+import productos from '../ItemList/productos'
+import Item from '../ItemList/Item'
 
-function Item ({ items }) {
-        return (
-            <div>
-                <div>
-                    <img src={items.pictureUrl} />
-                </div>
-                <div>
-                    <h3>{items.title}</h3>
-                    <p>{items.price}</p>
-                </div>
-            </div>
+function ItemList ({items}) {
+    return (
+        productos.map(p =>
+            <Item key = {p.id}
+            title = {p.title}
+            pictureUrl = {p.pictureUrl}
+            price = {p.price} 
+            />
         )
-    }
+    )
+}
 
-export default ItemList;
+export default ItemList
