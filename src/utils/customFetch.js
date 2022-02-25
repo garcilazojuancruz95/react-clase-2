@@ -1,17 +1,13 @@
 let is_ok = true;
 
-const productos = require('./utils/productos.js')
-
-console.log(productos)
-
-export const customFetch = () => {
+export const customFetch = (timeout, task) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 if (is_ok) {
-                    resolve();
+                    resolve(task);
                 } else {
-                    reject();
+                    reject("ko");
                 }
             });
-        });
+        }, timeout);
     }

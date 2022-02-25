@@ -1,4 +1,4 @@
-import productos from './productos'
+import productos from '../../utils/productos'
 import Item from '../ItemList/Item'
 
 function ItemList ({items}) {

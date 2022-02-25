@@ -1,5 +1,5 @@
 import ItemList from './ItemList';
-const { productos } = require('./productos');
+const { productos } = require('../../utils/productos');
 
 const ItemListContainer = () => {
     return (
