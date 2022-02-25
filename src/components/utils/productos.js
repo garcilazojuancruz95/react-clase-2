@@ -20,6 +20,6 @@ const productos = [
         stock: 76,
         pictureUrl: "https://ferreira.vteximg.com.br/arquivos/ids/334394-588-588/vn_vn0a36emc4r.jpg?v=637160700752200000",
     }
-]
+];
 
 export default productos;

@@ -1,16 +1,10 @@
 import ItemList from './ItemList';
-import { useEffect, useState } from 'react';
+const { productos } = require('./productos');
 
 const ItemListContainer = () => {
-    const [datos] = useState([]);
-
-
-    useEffect(() => {
-    }, [datos]);
-
     return (
         <>  
-            <ItemList items={datos} />
+            <ItemList items={productos} />
         </>
     );
 }
