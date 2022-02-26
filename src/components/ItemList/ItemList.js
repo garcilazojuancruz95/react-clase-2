@@ -3,7 +3,7 @@ import Item from '../ItemList/Item'
 
 function ItemList ({items}) {
     return (
-        productos.map(p =>
+        items.map(p =>
             <Item key = {p.id}
             title = {p.title}
             pictureUrl = {p.pictureUrl}
