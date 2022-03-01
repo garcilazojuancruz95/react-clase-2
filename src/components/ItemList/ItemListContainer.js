@@ -5,15 +5,19 @@ const { productos } = require('../../utils/productos');
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([])
+    const {ctegoryId} = useParams()
 
     useEffect(() => {
-        customFetch(2000, productos)
+        customFetch(2000, productos.filter(item => {
+            if (categoryId === undefined) return item
+            return item.category === categoryId
+        }))
             .then(response =>setDatos(response))
             .catch(error => console.log(error))
-    })
+    }, [categoryId])
     return (
         <>  
-            <ItemList items={productos} />
+            <ItemList items={datos} />
         </>
     );
 }
