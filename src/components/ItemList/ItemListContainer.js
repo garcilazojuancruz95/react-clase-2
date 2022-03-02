@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import {customFetch} from '../../utils/customFetch'
-import ItemList from './ItemList';
-const { productos } = require('../../utils/productos');
+import ItemList from './ItemList'
+import { useParams } from 'react-router-dom'
+const { productos } = require('../../utils/productos')
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([])
-    const {ctegoryId} = useParams()
+    const {categoryId} = useParams()
 
     useEffect(() => {
         customFetch(2000, productos.filter(item => {

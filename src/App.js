@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React from 'react';
 import Navbar from '../src/components/NavBar/Navbar'
-import ItemCount from './components/ItemList/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemList/ItemDetailContainer';
 import ItemListContainer from './components/ItemList/ItemListContainer';
-
 
 
 function App() {
@@ -14,19 +13,19 @@ function App() {
       <Navbar />
         <Routes>
             <Route 
-              path="/" 
+              path='/' 
               element={
               <ItemListContainer /> 
               }
             />
             <Route 
-              path="/:categoryId" 
+              path='/:categoryId' 
               element={
               <ItemListContainer />
               } 
             />
             <Route 
-              path="/:id" 
+              path='/:id' 
               element={
               <ItemDetailContainer />
               } 
