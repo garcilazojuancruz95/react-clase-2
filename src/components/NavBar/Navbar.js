@@ -15,7 +15,7 @@ const navbar = () => {
                     <li><Link to ='/remeras'>Remeras</Link></li>
                     <li><Link to ='/pantalones'>Pantalones</Link></li>
                     <li><Link to ='/zapatillas'>Zapatillas</Link></li>
-                    <li><SearchForm</li>
+                    <li><SearchForm /></li>
                 </ul>
                 
         <CartWidget imagen={Imagen} />
