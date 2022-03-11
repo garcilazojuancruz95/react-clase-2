@@ -3,7 +3,6 @@ import CartWidget from '../CartWidget/CartWidget';
 import Imagen from '../Img/carrito.png';
 import '../NavBar/Navbar.css'
 import { Link } from 'react-router-dom'
-import SearchForm from '../SearchForm';
 
 const navbar = () => {
     return (
